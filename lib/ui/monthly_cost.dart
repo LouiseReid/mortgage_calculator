@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 class Monthly extends StatefulWidget {
   @override
@@ -9,6 +10,23 @@ class _MonthlyState extends State<Monthly> {
   var _mortgageAmount = new TextEditingController();
   var _period = new TextEditingController();
   var _interestRate = new TextEditingController();
+
+  @override
+  void initState() {
+    super.initState();
+    _mortgageAmount.addListener(_calculateMortgage);
+    _period.addListener(_calculateMortgage);
+    _interestRate.addListener(_calculateMortgage);
+  }
+
+  void _calculateMortgage() {
+    double interestRate = (double.parse(_interestRate.text) / 100) / 12;
+    int months = int.parse(_period.text) * 12;
+    double monthlyTop = interestRate * pow((1 + interestRate), months);
+    double monthlyBottom = pow(1 + interestRate, months) - 1;
+    double monthlyRate = double.parse(_mortgageAmount.text) * (monthlyTop/monthlyBottom);
+    print(monthlyRate);
+  }
 
   @override
   Widget build(BuildContext context) {
