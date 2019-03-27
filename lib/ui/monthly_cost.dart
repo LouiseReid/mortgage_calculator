@@ -100,7 +100,7 @@ class _MonthlyState extends State<Monthly> {
               children: <Widget>[
                 Text(
                   "Total Cost of Mortgage: £${_totalRepayment.round()}",
-                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w100),
+                  style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w100),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 10.0),
