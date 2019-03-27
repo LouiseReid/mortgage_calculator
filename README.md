@@ -1,16 +1,11 @@
-# mortgage_calc
+# Mortgage Calculator 
 
-A new Flutter project.
+Morgtage calculator built with Flutter and Dart compatable on both android and ios.
 
-## Getting Started
+<img src="https://i.ibb.co/YPnpsy5/Simulator-Screen-Shot-i-Phone-X-2019-03-27-at-08-42-22-iphonexspacegrey-portrait.png"  height="550"> <img src="https://i.ibb.co/t88VFr9/Screenshot-1553679925-nexus5x-portrait.png" height="550">
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+
+
